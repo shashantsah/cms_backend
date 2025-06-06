@@ -44,6 +44,6 @@ app.use("/api/branch", require("./routes/Other Api/branch.route"));
 // app.use("/api/attendance" , require("./routes/Other Api/attendance.route"));
 // app.use("/api/result", require("./routes/Other Api/result.route"));
 
-app.listen(port, () => {
-  console.log(`Server Listening On http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server Listening On ${port}`);
 });
