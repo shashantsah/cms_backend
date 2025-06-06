@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "seed": "node admin-seeder.js"
-  },
+  "start": "node admin-seeder.js && node index.js",
+  "dev": "nodemon index.js",
+  "seed": "node admin-seeder.js"
+},
   "author": "Khushi Singh",
   "license": "ISC",
   "dependencies": {

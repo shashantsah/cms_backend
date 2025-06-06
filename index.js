@@ -3,11 +3,14 @@ const express = require("express");
 const app = express();
 const path = require("path")
 connectToMongo();
-const port = 5001 || process.env.PORT;
+const port = process.env.PORT ;
 var cors = require("cors");
 
 app.use(cors({
-  origin:"*",
+  origin: process.env.CLIENT_URL || "*",
+
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],  
 }));
 
 app.use(express.json()); //to convert request data to json
