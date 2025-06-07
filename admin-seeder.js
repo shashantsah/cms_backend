@@ -29,12 +29,12 @@ const seedData = async () => {
         // Create admin details
         const adminDetail = {
             employeeId: "1",
-            firstName: "Shashant",
+            firstName: "Sonika",
             middleName: "",
-            lastName: "Kumar",
-            email: "shashant.sah@gmail.com",
+            lastName: "Yadav",
+            email: "yadavsonika777@gmal.com",
             phoneNumber: "+917543081023",
-            gender: "Male",
+            gender: "Female",
             type: "Admin",
             profile: "Admin_Profile_1.jpg",
         };
